@@ -74,7 +74,9 @@ class Blanks:
                 what,   # which measurement to plot, 'od600', 'probe' or 'compet'
                 y_range=None
         ):
-        rep_dashes = ['solid', 'dashed', 'dotted']  # dashes for the repeats
+        rep_dashes = [  'solid', 'dashed', 'dotted',  # dashes for the repeats
+                        'solid', 'dashed', 'dotted',
+                        'solid', 'dashed', 'dotted']
 
         # determine the y-axis label
         ylabel = what
@@ -270,7 +272,9 @@ class PlateMeas:
                 y_range=None,
                 masked=False, # whether to mask weird measurements
         ):
-        rep_dashes = ['solid', 'dashed', 'dotted']  # dashes for the repeats
+        rep_dashes = ['solid', 'dashed', 'dotted',  # dashes for the repeats
+                      'solid', 'dashed', 'dotted',
+                      'solid', 'dashed', 'dotted']
 
         if(masked):
             measmask = self.measmask
