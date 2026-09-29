@@ -248,7 +248,6 @@ class PlateMeas:
             # get stdevs
             for rep in range(1, self.od600_0.shape[0]+1):
                 if(self.measmask[rep-1, i]):
-                    num_measurements_included[i] += 1
                     self.od600_stdev_masked[i] += (self.od600[rep-1, i]-self.od600_mean_masked[i])**2
                     self.probe_stdev_masked[i] += (self.probe[rep-1, i]-self.probe_mean_masked[i])**2
                     self.compet_stdev_masked[i] += (self.compet[rep-1, i]-self.compet_mean_masked[i])**2
